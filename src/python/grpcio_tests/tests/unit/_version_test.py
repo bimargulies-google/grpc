@@ -11,7 +11,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 """Test for grpc.__version__"""
 
 from __future__ import absolute_import
@@ -25,10 +24,10 @@ import logging
 
 class VersionTest(unittest.TestCase):
 
-  def test_get_version(self):
-    self.assertIsInstance(grpc.__version__, str)
+    def test_get_version(self):
+        self.assertIsInstance(grpc.__version__, str)
 
 
 if __name__ == '__main__':
-  logging.basicConfig()
-  unittest.main(verbosity=2)
+    logging.basicConfig()
+    unittest.main(verbosity=2)

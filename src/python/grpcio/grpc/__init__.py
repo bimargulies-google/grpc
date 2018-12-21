@@ -23,12 +23,11 @@ from grpc._cython import cygrpc as _cygrpc
 
 logging.getLogger(__name__).addHandler(logging.NullHandler())
 
-
 try:
-  import _grpcio_metadata
-  __version__ = _grpcio_metadata.__version__
+    import _grpcio_metadata
+    __version__ = _grpcio_metadata.__version__
 except ImportError:
-  __version__ = "dev0"
+    __version__ = "dev0"
 
 ############################## Future Interface  ###############################
 
